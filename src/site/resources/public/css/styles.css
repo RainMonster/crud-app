@@ -1,0 +1,39 @@
+/*small spacing tweaks*/
+.form-horizontal .control-label {
+  padding-top: 0px;
+}
+
+#createCustomer.legend {
+  margin-left: 50px;
+}
+
+
+/*color changes and other styles*/
+label.error {
+  color: #E85467;
+}
+
+.container {
+  margin-top: 10px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: #F8F8F8;
+}
+
+.btn-warning {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(238, 162, 54);
+  color: rgb(238, 162, 54);
+}
+
+.form-group.form-section:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-image:
+    linear-gradient(
+      to right,
+      #F8F8F8,
+      #E5E5E5 50%,
+      #F8F8F8 100%
+    );
+}

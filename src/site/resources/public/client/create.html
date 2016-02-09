@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Form Validations</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="createCustomer" class="form-horizontal">
+      <legend>Create New Client</legend>
+
+      <div class="form-group form-section">
+        <div class="form-group row">
+          <label for="clientName" class="col-sm-4 control-label">Company Name:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="clientName" name="clientName">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientPhone" class="col-sm-4 control-label">Phone Number:</label>
+          <div class="col-sm-6">
+            <input type="tel" class="form-control" id="clientPhone" name="clientPhone">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientURL" class="col-sm-4 control-label">Website:</label>
+          <div class="col-sm-6">
+            <input type="url" class="form-control" id="clientURL" name="clientURL" placeholder="http://">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group form-section">
+        <div class="form-group row">
+          <label for="clientStreet_01" class="col-sm-4 control-label">Address Line 1:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="clientStreet_01" name="clientStreet_01">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientStreet_02" class="col-sm-4 control-label">Address Line 2: <br />
+            <small class="text-muted">(optional)</small>
+          </label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="clientStreet_02" name="clientStreet_02">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientCity" class="col-sm-4 control-label">City:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="clientCity" name="clientCity">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientRegion" class="col-sm-4 control-label">State/Province/Region:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="clientRegion" name="clientRegion">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientZIP" class="col-sm-4 control-label">ZIP/Postal Code:<br />
+            <small class="text-muted">(optional)</small>
+          </label>
+          <div class="col-sm-6">
+            <input type="number" class="form-control" id="clientZIP" name="clientZIP">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="clientCountry" class="col-sm-4 control-label">Country:</label>
+          <div class="col-sm-6">
+            <select class="form-control c-select" id="clientCountry" name="clientCountry">
+              <option value="">Country...</option>
+              <option value="Afganistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <option value="American Samoa">American Samoa</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Angola">Angola</option>
+              <option value="Anguilla">Anguilla</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-offset-4 col-sm-6">
+          <button type="submit" class="btn btn-default">Create Client</button>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-offset-4 col-sm-6">
+          <button type="reset" class="btn btn-warning" onclick="return confirm_reset()">Reset Form</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
+  <script type="text/javascript" src="../js/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+  <script type="text/javascript" src="../js/form_validations.js"></script>
+  <script>
+    function confirm_reset() {
+      return confirm("Are you sure you want to erase all text?");
+    }
+  </script>
+</body>
+</html>
